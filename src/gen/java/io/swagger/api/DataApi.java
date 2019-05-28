@@ -183,7 +183,7 @@ import javax.ws.rs.core.SecurityContext;
 import javax.ws.rs.*;
 import javax.validation.constraints.*;
 
-@Path("/data")
+@Path("/restconf/data")
 @Consumes({ "application/json" })
 @Produces({ "application/json" })
 @io.swagger.annotations.Api(description = "the data API")
