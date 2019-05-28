@@ -26,7 +26,7 @@ import javax.validation.constraints.*;
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2018-11-14T14:58:12.974+01:00")
 public class TapiPhotonicMediaEndPointAugmentation1   {
-  @JsonProperty("media-channel-service-interface-point-spec")
+  @JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")
   private TapiPhotonicMediaMediaChannelServiceInterfacePointSpec mediaChannelServiceInterfacePointSpec = null;
 
   public TapiPhotonicMediaEndPointAugmentation1 mediaChannelServiceInterfacePointSpec(TapiPhotonicMediaMediaChannelServiceInterfacePointSpec mediaChannelServiceInterfacePointSpec) {
@@ -38,7 +38,7 @@ public class TapiPhotonicMediaEndPointAugmentation1   {
    * none
    * @return mediaChannelServiceInterfacePointSpec
    **/
-  @JsonProperty("media-channel-service-interface-point-spec")
+  @JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")
   @ApiModelProperty(value = "none")
   public TapiPhotonicMediaMediaChannelServiceInterfacePointSpec getMediaChannelServiceInterfacePointSpec() {
     return mediaChannelServiceInterfacePointSpec;

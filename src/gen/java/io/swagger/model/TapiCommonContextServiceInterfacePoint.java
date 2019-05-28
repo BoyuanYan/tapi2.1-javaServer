@@ -68,7 +68,7 @@ public class TapiCommonContextServiceInterfacePoint   {
   @JsonProperty("otsi-service-interface-point-spec")
   private TapiPhotonicMediaOtsiServiceInterfacePointSpec otsiServiceInterfacePointSpec = null;
 
-  @JsonProperty("media-channel-service-interface-point-spec")
+  @JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")
   private TapiPhotonicMediaMediaChannelServiceInterfacePointSpec mediaChannelServiceInterfacePointSpec = null;
 
   public TapiCommonContextServiceInterfacePoint operationalState(TapiCommonOperationalState operationalState) {
@@ -286,7 +286,7 @@ public class TapiCommonContextServiceInterfacePoint   {
    * none
    * @return mediaChannelServiceInterfacePointSpec
    **/
-  @JsonProperty("media-channel-service-interface-point-spec")
+  @JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")
   @ApiModelProperty(value = "none")
   public TapiPhotonicMediaMediaChannelServiceInterfacePointSpec getMediaChannelServiceInterfacePointSpec() {
     return mediaChannelServiceInterfacePointSpec;

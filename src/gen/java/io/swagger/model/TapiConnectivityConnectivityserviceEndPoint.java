@@ -82,7 +82,7 @@ public class TapiConnectivityConnectivityserviceEndPoint   {
   @JsonProperty("capacity")
   private TapiCommonCapacity capacity = null;
 
-  @JsonProperty("media-channel-service-interface-point-spec")
+  @JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")
   private TapiPhotonicMediaMediaChannelServiceInterfacePointSpec mediaChannelServiceInterfacePointSpec = null;
 
   @JsonProperty("otsi-connectivity-service-end-point-spec")
@@ -360,7 +360,7 @@ public class TapiConnectivityConnectivityserviceEndPoint   {
    * none
    * @return mediaChannelServiceInterfacePointSpec
    **/
-  @JsonProperty("media-channel-service-interface-point-spec")
+  @JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")
   @ApiModelProperty(value = "none")
   public TapiPhotonicMediaMediaChannelServiceInterfacePointSpec getMediaChannelServiceInterfacePointSpec() {
     return mediaChannelServiceInterfacePointSpec;

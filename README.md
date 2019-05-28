@@ -73,12 +73,16 @@ The codes is generated automatically as listed:
     mvn clean package jetty:run
 
 
-1. Firstly, some Restful Response are filled in class `DataApiServiceImpl`;
+1. Some Restful Response are filled in class `DataApiServiceImpl`;
 
-2. Secondly, in order to match the namespace prefix definition, some URIs defined in class `DataApi` are replaced:
+2. In order to match the namespace prefix definition, some URIs defined in class `DataApi` are replaced:
 
 | Auto-generated | replaced |
 | ---- | ---- |
 | context | tapi-common:context |
 | media-channel-service-interface-point-spec | tapi-photonic-media:media-channel-service-interface-point-spec |
 | connectivity-service | tapi-connectivity:connectivity-service |
+
+3. The response json should also contains the namespace prefix as 2. mentioned. 
+For device/port discovery, all Java annotations `@JsonProperty("media-channel-service-interface-point-spec")`
+are replaced by `@JsonProperty("tapi-photonic-media:media-channel-service-interface-point-spec")`
