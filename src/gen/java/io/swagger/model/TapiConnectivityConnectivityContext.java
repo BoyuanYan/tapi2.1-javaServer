@@ -29,7 +29,7 @@ import javax.validation.constraints.*;
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2018-11-14T14:58:12.974+01:00")
 public class TapiConnectivityConnectivityContext   {
-  @JsonProperty("connectivity-service")
+  @JsonProperty("tapi-connectivity:connectivity-service")
   private List<TapiConnectivityConnectivityService> connectivityService = null;
 
   @JsonProperty("connection")
@@ -52,7 +52,7 @@ public class TapiConnectivityConnectivityContext   {
    * none
    * @return connectivityService
    **/
-  @JsonProperty("connectivity-service")
+  @JsonProperty("tapi-connectivity:connectivity-service")
   @ApiModelProperty(value = "none")
   public List<TapiConnectivityConnectivityService> getConnectivityService() {
     return connectivityService;

@@ -213,7 +213,7 @@ public class DataApi  {
    }
 
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectionEndPointRef", response = TapiConnectivityConnectionEndPointRef.class, tags={ "tapi-connectivity", })
@@ -231,7 +231,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidConnectionEndPointtopologyUuidnodeUuidnodeEdgePointUuidconnectionEndPointUuidGet(uuid,topologyUuid,nodeUuid,nodeEdgePointUuid,connectionEndPointUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.Connection", response = TapiConnectivityConnection.class, tags={ "tapi-connectivity", })
@@ -245,7 +245,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidGet(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/lower-connection={connection-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/lower-connection={connection-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectionRef", response = TapiConnectivityConnectionRef.class, tags={ "tapi-connectivity", })
@@ -260,7 +260,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidLowerConnectionconnectionUuidGet(uuid,connectionUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.NameAndValue", response = TapiCommonNameAndValue.class, tags={ "tapi-connectivity", })
@@ -275,7 +275,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidNamevalueNameGet(uuid,valueName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/route={local-id}/connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/route={local-id}/connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectionEndPointRef", response = TapiConnectivityConnectionEndPointRef.class, tags={ "tapi-connectivity", })
@@ -294,7 +294,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidRoutelocalIdConnectionEndPointtopologyUuidnodeUuidnodeEdgePointUuidconnectionEndPointUuidGet(uuid,localId,topologyUuid,nodeUuid,nodeEdgePointUuid,connectionEndPointUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/route={local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/route={local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.Route", response = TapiConnectivityRoute.class, tags={ "tapi-connectivity", })
@@ -309,7 +309,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidRoutelocalIdGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/route={local-id}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/route={local-id}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.NameAndValue", response = TapiCommonNameAndValue.class, tags={ "tapi-connectivity", })
@@ -325,7 +325,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidRoutelocalIdNamevalueNameGet(uuid,localId,valueName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/supported-client-link={topology-uuid},{link-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/supported-client-link={topology-uuid},{link-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.LinkRef", response = TapiTopologyLinkRef.class, tags={ "tapi-connectivity", })
@@ -341,7 +341,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSupportedClientLinktopologyUuidlinkUuidGet(uuid,topologyUuid,linkUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.SwitchControl", response = TapiConnectivitySwitchControl.class, tags={ "tapi-connectivity", })
@@ -356,7 +356,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidGet(uuid,switchControlUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.NameAndValue", response = TapiCommonNameAndValue.class, tags={ "tapi-connectivity", })
@@ -372,7 +372,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidNamevalueNameGet(uuid,switchControlUuid,valueName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/resilience-type/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/resilience-type/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.ResilienceType", response = TapiTopologyResilienceType.class, tags={ "tapi-connectivity", })
@@ -387,7 +387,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidResilienceTypeGet(uuid,switchControlUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/sub-switch-control={connection-uuid},{sub-switch-control-switch-control-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/sub-switch-control={connection-uuid},{sub-switch-control-switch-control-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.SwitchControlRef", response = TapiConnectivitySwitchControlRef.class, tags={ "tapi-connectivity", })
@@ -404,7 +404,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidSubSwitchControlconnectionUuidsubSwitchControlSwitchControlUuidGet(uuid,switchControlUuid,connectionUuid,subSwitchControlSwitchControlUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.Switch", response = TapiConnectivitySwitch.class, tags={ "tapi-connectivity", })
@@ -420,7 +420,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidSwitchlocalIdGet(uuid,switchControlUuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.NameAndValue", response = TapiCommonNameAndValue.class, tags={ "tapi-connectivity", })
@@ -437,7 +437,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidSwitchlocalIdNamevalueNameGet(uuid,switchControlUuid,localId,valueName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/selected-connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/selected-connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectionEndPointRef", response = TapiConnectivityConnectionEndPointRef.class, tags={ "tapi-connectivity", })
@@ -457,7 +457,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidSwitchlocalIdSelectedConnectionEndPointtopologyUuidnodeUuidnodeEdgePointUuidconnectionEndPointUuidGet(uuid,switchControlUuid,localId,topologyUuid,nodeUuid,nodeEdgePointUuid,connectionEndPointUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/selected-route={connection-uuid},{route-local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connection={uuid}/switch-control={switch-control-uuid}/switch={local-id}/selected-route={connection-uuid},{route-local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.RouteRef", response = TapiConnectivityRouteRef.class, tags={ "tapi-connectivity", })
@@ -475,7 +475,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectionuuidSwitchControlswitchControlUuidSwitchlocalIdSelectedRouteconnectionUuidrouteLocalIdGet(uuid,switchControlUuid,localId,connectionUuid,routeLocalId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.connectivitycontext.ConnectivityService", response = Void.class, tags={ "tapi-connectivity", })
@@ -491,7 +491,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServicePost(tapiConnectivityConnectivitycontextConnectivityServiceBodyParam,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/avoid-topology={topology-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/avoid-topology={topology-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.TopologyRef", response = TapiTopologyTopologyRef.class, tags={ "tapi-connectivity", })
@@ -506,7 +506,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidAvoidTopologytopologyUuidGet(uuid,topologyUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/connection={connection-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/connection={connection-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectionRef", response = TapiConnectivityConnectionRef.class, tags={ "tapi-connectivity", })
@@ -521,7 +521,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidConnectionconnectionUuidGet(uuid,connectionUuid,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/coroute-inclusion/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/coroute-inclusion/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -535,7 +535,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCorouteInclusionDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/coroute-inclusion/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/coroute-inclusion/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectivityServiceRef", response = TapiConnectivityConnectivityServiceRef.class, tags={ "tapi-connectivity", })
@@ -549,7 +549,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCorouteInclusionGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/coroute-inclusion/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/coroute-inclusion/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -566,7 +566,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCorouteInclusionPost(uuid,tapiConnectivityConnectivityServiceRefBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/coroute-inclusion/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/coroute-inclusion/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -583,7 +583,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCorouteInclusionPut(uuid,tapiConnectivityConnectivityServiceRefBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/cost-characteristic/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/cost-characteristic/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.CostCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -600,7 +600,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCostCharacteristicPost(uuid,tapiTopologyCostCharacteristicBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/cost-characteristic={cost-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/cost-characteristic={cost-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.topology.CostCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -615,7 +615,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCostCharacteristiccostNameDelete(uuid,costName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/cost-characteristic={cost-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/cost-characteristic={cost-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.CostCharacteristic", response = TapiTopologyCostCharacteristic.class, tags={ "tapi-connectivity", })
@@ -630,7 +630,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCostCharacteristiccostNameGet(uuid,costName,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/cost-characteristic={cost-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/cost-characteristic={cost-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.CostCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -648,7 +648,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCostCharacteristiccostNamePost(uuid,costName,tapiTopologyCostCharacteristicBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/cost-characteristic={cost-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/cost-characteristic={cost-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.topology.CostCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -666,7 +666,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidCostCharacteristiccostNamePut(uuid,costName,tapiTopologyCostCharacteristicBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.connectivity.connectivitycontext.ConnectivityService", response = Void.class, tags={ "tapi-connectivity", })
@@ -680,7 +680,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidDelete(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/diversity-exclusion/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/diversity-exclusion/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -697,7 +697,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidDiversityExclusionPost(uuid,tapiConnectivityConnectivityServiceRefBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -712,7 +712,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidDiversityExclusionconnectivityServiceUuidDelete(uuid,connectivityServiceUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectivityServiceRef", response = TapiConnectivityConnectivityServiceRef.class, tags={ "tapi-connectivity", })
@@ -727,7 +727,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidDiversityExclusionconnectivityServiceUuidGet(uuid,connectivityServiceUuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -745,7 +745,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidDiversityExclusionconnectivityServiceUuidPost(uuid,connectivityServiceUuid,tapiConnectivityConnectivityServiceRefBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/diversity-exclusion={connectivity-service-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.connectivity.ConnectivityServiceRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -763,7 +763,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidDiversityExclusionconnectivityServiceUuidPut(uuid,connectivityServiceUuid,tapiConnectivityConnectivityServiceRefBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.connectivityservice.EndPoint", response = Void.class, tags={ "tapi-connectivity", })
@@ -780,7 +780,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointPost(uuid,tapiConnectivityConnectivityserviceEndPointBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -795,7 +795,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedBurstSizeDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -810,7 +810,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedBurstSizeGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -828,7 +828,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedBurstSizePost(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -846,7 +846,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedBurstSizePut(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -861,7 +861,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedInformationRateDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -876,7 +876,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedInformationRateGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -894,7 +894,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedInformationRatePost(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -912,7 +912,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileCommittedInformationRatePut(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.BandwidthProfile", response = Void.class, tags={ "tapi-connectivity", })
@@ -927,7 +927,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.BandwidthProfile", response = TapiCommonBandwidthProfile.class, tags={ "tapi-connectivity", })
@@ -942,7 +942,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfileGet(uuid,localId,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -957,7 +957,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakBurstSizeDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -972,7 +972,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakBurstSizeGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -990,7 +990,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakBurstSizePost(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1008,7 +1008,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakBurstSizePut(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1023,7 +1023,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakInformationRateDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -1038,7 +1038,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakInformationRateGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1056,7 +1056,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakInformationRatePost(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1074,7 +1074,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePeakInformationRatePut(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.BandwidthProfile", response = Void.class, tags={ "tapi-connectivity", })
@@ -1092,7 +1092,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePost(uuid,localId,tapiCommonBandwidthProfileBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.BandwidthProfile", response = Void.class, tags={ "tapi-connectivity", })
@@ -1110,7 +1110,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityBandwidthProfilePut(uuid,localId,tapiCommonBandwidthProfileBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.Capacity", response = Void.class, tags={ "tapi-connectivity", })
@@ -1125,7 +1125,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.Capacity", response = TapiCommonCapacity.class, tags={ "tapi-connectivity", })
@@ -1140,7 +1140,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.Capacity", response = Void.class, tags={ "tapi-connectivity", })
@@ -1158,7 +1158,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityPost(uuid,localId,tapiCommonCapacityBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.Capacity", response = Void.class, tags={ "tapi-connectivity", })
@@ -1176,7 +1176,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityPut(uuid,localId,tapiCommonCapacityBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1191,7 +1191,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityTotalSizeDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -1206,7 +1206,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityTotalSizeGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1224,7 +1224,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityTotalSizePost(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1242,7 +1242,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdCapacityTotalSizePut(uuid,localId,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/connection-end-point={topology-uuid},{node-uuid},{node-edge-point-uuid},{connection-end-point-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectionEndPointRef", response = TapiConnectivityConnectionEndPointRef.class, tags={ "tapi-connectivity", })
@@ -1261,7 +1261,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdConnectionEndPointtopologyUuidnodeUuidnodeEdgePointUuidconnectionEndPointUuidGet(uuid,localId,topologyUuid,nodeUuid,nodeEdgePointUuid,connectionEndPointUuid,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.connectivity.connectivityservice.EndPoint", response = Void.class, tags={ "tapi-connectivity", })
@@ -1276,7 +1276,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.connectivityservice.EndPoint", response = TapiConnectivityConnectivityserviceEndPoint.class, tags={ "tapi-connectivity", })
@@ -1291,7 +1291,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdGet(uuid,localId,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.MediaChannelServiceInterfacePointSpec", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1306,7 +1306,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.MediaChannelServiceInterfacePointSpec", response = TapiPhotonicMediaMediaChannelServiceInterfacePointSpec.class, tags={ "tapi-photonic-media", })
@@ -1321,7 +1321,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/available-spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/available-spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.FrequencyConstraint", response = TapiPhotonicMediaFrequencyConstraint.class, tags={ "tapi-photonic-media", })
@@ -1336,7 +1336,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolAvailableSpectrumFrequencyConstraintGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/available-spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/available-spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.SpectrumBand", response = TapiPhotonicMediaSpectrumBand.class, tags={ "tapi-photonic-media", })
@@ -1351,7 +1351,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolAvailableSpectrumGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.MediaChannelPoolCapabilityPac", response = TapiPhotonicMediaMediaChannelPoolCapabilityPac.class, tags={ "tapi-photonic-media", })
@@ -1366,7 +1366,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/occupied-spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/occupied-spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.FrequencyConstraint", response = TapiPhotonicMediaFrequencyConstraint.class, tags={ "tapi-photonic-media", })
@@ -1381,7 +1381,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolOccupiedSpectrumFrequencyConstraintGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/occupied-spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/occupied-spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.SpectrumBand", response = TapiPhotonicMediaSpectrumBand.class, tags={ "tapi-photonic-media", })
@@ -1396,7 +1396,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolOccupiedSpectrumGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/supportable-spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/supportable-spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.FrequencyConstraint", response = TapiPhotonicMediaFrequencyConstraint.class, tags={ "tapi-photonic-media", })
@@ -1411,7 +1411,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolSupportableSpectrumFrequencyConstraintGet(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/supportable-spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/mc-pool/supportable-spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.SpectrumBand", response = TapiPhotonicMediaSpectrumBand.class, tags={ "tapi-photonic-media", })
@@ -1426,7 +1426,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecMcPoolSupportableSpectrumGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.MediaChannelServiceInterfacePointSpec", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1444,7 +1444,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecPost(uuid,localId,tapiPhotonicMediaMediaChannelServiceInterfacePointSpecBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/tapi-photonic-media:media-channel-service-interface-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.MediaChannelServiceInterfacePointSpec", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1462,7 +1462,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdMediaChannelServiceInterfacePointSpecPut(uuid,localId,tapiPhotonicMediaMediaChannelServiceInterfacePointSpecBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/name/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/name/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1480,7 +1480,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdNamePost(uuid,localId,tapiCommonNameAndValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1496,7 +1496,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdNamevalueNameDelete(uuid,localId,valueName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.NameAndValue", response = TapiCommonNameAndValue.class, tags={ "tapi-connectivity", })
@@ -1512,7 +1512,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdNamevalueNameGet(uuid,localId,valueName,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1531,7 +1531,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdNamevalueNamePost(uuid,localId,valueName,tapiCommonNameAndValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -1550,7 +1550,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdNamevalueNamePut(uuid,localId,valueName,tapiCommonNameAndValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.OtsiConnectivityServiceEndPointSpec", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1565,7 +1565,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.OtsiConnectivityServiceEndPointSpec", response = TapiPhotonicMediaOtsiConnectivityServiceEndPointSpec.class, tags={ "tapi-photonic-media", })
@@ -1580,7 +1580,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecGet(uuid,localId,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.ApplicationIdentifier", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1595,7 +1595,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigApplicationIdentifierDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.ApplicationIdentifier", response = TapiPhotonicMediaApplicationIdentifier.class, tags={ "tapi-photonic-media", })
@@ -1610,7 +1610,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigApplicationIdentifierGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.ApplicationIdentifier", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1628,7 +1628,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigApplicationIdentifierPost(uuid,localId,tapiPhotonicMediaApplicationIdentifierBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/application-identifier/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.ApplicationIdentifier", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1646,7 +1646,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigApplicationIdentifierPut(uuid,localId,tapiPhotonicMediaApplicationIdentifierBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.CentralFrequency", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1661,7 +1661,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyDelete(uuid,localId,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.FrequencyConstraint", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1676,7 +1676,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyFrequencyConstraintDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.FrequencyConstraint", response = TapiPhotonicMediaFrequencyConstraint.class, tags={ "tapi-photonic-media", })
@@ -1691,7 +1691,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyFrequencyConstraintGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.FrequencyConstraint", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1709,7 +1709,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyFrequencyConstraintPost(uuid,localId,tapiPhotonicMediaFrequencyConstraintBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.FrequencyConstraint", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1727,7 +1727,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyFrequencyConstraintPut(uuid,localId,tapiPhotonicMediaFrequencyConstraintBodyParam,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.CentralFrequency", response = TapiPhotonicMediaCentralFrequency.class, tags={ "tapi-photonic-media", })
@@ -1742,7 +1742,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.CentralFrequency", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1760,7 +1760,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyPost(uuid,localId,tapiPhotonicMediaCentralFrequencyBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/central-frequency/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.CentralFrequency", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1778,7 +1778,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigCentralFrequencyPut(uuid,localId,tapiPhotonicMediaCentralFrequencyBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.OtsiTerminationConfigPac", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1793,7 +1793,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.OtsiTerminationConfigPac", response = TapiPhotonicMediaOtsiTerminationConfigPac.class, tags={ "tapi-photonic-media", })
@@ -1808,7 +1808,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.OtsiTerminationConfigPac", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1826,7 +1826,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigPost(uuid,localId,tapiPhotonicMediaOtsiTerminationConfigPacBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.OtsiTerminationConfigPac", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1844,7 +1844,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigPut(uuid,localId,tapiPhotonicMediaOtsiTerminationConfigPacBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.SpectrumBand", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1859,7 +1859,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumDelete(uuid,localId,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.FrequencyConstraint", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1874,7 +1874,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumFrequencyConstraintDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.FrequencyConstraint", response = TapiPhotonicMediaFrequencyConstraint.class, tags={ "tapi-photonic-media", })
@@ -1889,7 +1889,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumFrequencyConstraintGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.FrequencyConstraint", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1907,7 +1907,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumFrequencyConstraintPost(uuid,localId,tapiPhotonicMediaFrequencyConstraintBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/frequency-constraint/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.FrequencyConstraint", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1925,7 +1925,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumFrequencyConstraintPut(uuid,localId,tapiPhotonicMediaFrequencyConstraintBodyParam,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.SpectrumBand", response = TapiPhotonicMediaSpectrumBand.class, tags={ "tapi-photonic-media", })
@@ -1940,7 +1940,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.SpectrumBand", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1958,7 +1958,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumPost(uuid,localId,tapiPhotonicMediaSpectrumBandBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/spectrum/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.SpectrumBand", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1976,7 +1976,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigSpectrumPut(uuid,localId,tapiPhotonicMediaSpectrumBandBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.photonic.media.PowerPropertiesPac", response = Void.class, tags={ "tapi-photonic-media", })
@@ -1991,7 +1991,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigTransmitPowerDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.photonic.media.PowerPropertiesPac", response = TapiPhotonicMediaPowerPropertiesPac.class, tags={ "tapi-photonic-media", })
@@ -2006,7 +2006,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigTransmitPowerGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.PowerPropertiesPac", response = Void.class, tags={ "tapi-photonic-media", })
@@ -2024,7 +2024,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigTransmitPowerPost(uuid,localId,tapiPhotonicMediaPowerPropertiesPacBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/otsi-config/transmit-power/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.PowerPropertiesPac", response = Void.class, tags={ "tapi-photonic-media", })
@@ -2042,7 +2042,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecOtsiConfigTransmitPowerPut(uuid,localId,tapiPhotonicMediaPowerPropertiesPacBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.photonic.media.OtsiConnectivityServiceEndPointSpec", response = Void.class, tags={ "tapi-photonic-media", })
@@ -2060,7 +2060,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecPost(uuid,localId,tapiPhotonicMediaOtsiConnectivityServiceEndPointSpecBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/otsi-connectivity-service-end-point-spec/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.photonic.media.OtsiConnectivityServiceEndPointSpec", response = Void.class, tags={ "tapi-photonic-media", })
@@ -2078,7 +2078,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdOtsiConnectivityServiceEndPointSpecPut(uuid,localId,tapiPhotonicMediaOtsiConnectivityServiceEndPointSpecBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.connectivityservice.EndPoint", response = Void.class, tags={ "tapi-connectivity", })
@@ -2096,7 +2096,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdPost(uuid,localId,tapiConnectivityConnectivityserviceEndPointBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.connectivity.connectivityservice.EndPoint", response = Void.class, tags={ "tapi-connectivity", })
@@ -2114,7 +2114,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdPut(uuid,localId,tapiConnectivityConnectivityserviceEndPointBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.ServiceInterfacePointRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -2129,7 +2129,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdServiceInterfacePointDelete(uuid,localId,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.ServiceInterfacePointRef", response = TapiCommonServiceInterfacePointRef.class, tags={ "tapi-connectivity", })
@@ -2144,7 +2144,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdServiceInterfacePointGet(uuid,localId,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.ServiceInterfacePointRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -2162,7 +2162,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdServiceInterfacePointPost(uuid,localId,tapiCommonServiceInterfacePointRefBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/end-point={local-id}/service-interface-point/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.ServiceInterfacePointRef", response = Void.class, tags={ "tapi-connectivity", })
@@ -2180,7 +2180,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidEndPointlocalIdServiceInterfacePointPut(uuid,localId,tapiCommonServiceInterfacePointRefBodyParam,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/exclude-link={topology-uuid},{link-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/exclude-link={topology-uuid},{link-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.LinkRef", response = TapiTopologyLinkRef.class, tags={ "tapi-connectivity", })
@@ -2196,7 +2196,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidExcludeLinktopologyUuidlinkUuidGet(uuid,topologyUuid,linkUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/exclude-node={topology-uuid},{node-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/exclude-node={topology-uuid},{node-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.NodeRef", response = TapiTopologyNodeRef.class, tags={ "tapi-connectivity", })
@@ -2212,7 +2212,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidExcludeNodetopologyUuidnodeUuidGet(uuid,topologyUuid,nodeUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/exclude-path={path-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/exclude-path={path-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.path.computation.PathRef", response = TapiPathComputationPathRef.class, tags={ "tapi-connectivity", })
@@ -2227,7 +2227,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidExcludePathpathUuidGet(uuid,pathUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.connectivitycontext.ConnectivityService", response = TapiConnectivityConnectivitycontextConnectivityService.class, tags={ "tapi-connectivity", })
@@ -2241,7 +2241,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidGet(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/include-link={topology-uuid},{link-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/include-link={topology-uuid},{link-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.LinkRef", response = TapiTopologyLinkRef.class, tags={ "tapi-connectivity", })
@@ -2257,7 +2257,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidIncludeLinktopologyUuidlinkUuidGet(uuid,topologyUuid,linkUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/include-node={topology-uuid},{node-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/include-node={topology-uuid},{node-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.NodeRef", response = TapiTopologyNodeRef.class, tags={ "tapi-connectivity", })
@@ -2273,7 +2273,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidIncludeNodetopologyUuidnodeUuidGet(uuid,topologyUuid,nodeUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/include-path={path-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/include-path={path-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.path.computation.PathRef", response = TapiPathComputationPathRef.class, tags={ "tapi-connectivity", })
@@ -2288,7 +2288,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidIncludePathpathUuidGet(uuid,pathUuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/include-topology={topology-uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/include-topology={topology-uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.TopologyRef", response = TapiTopologyTopologyRef.class, tags={ "tapi-connectivity", })
@@ -2303,7 +2303,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidIncludeTopologytopologyUuidGet(uuid,topologyUuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/latency-characteristic/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/latency-characteristic/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.LatencyCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -2320,7 +2320,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidLatencyCharacteristicPost(uuid,tapiTopologyLatencyCharacteristicBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.topology.LatencyCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -2335,7 +2335,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidLatencyCharacteristictrafficPropertyNameDelete(uuid,trafficPropertyName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.LatencyCharacteristic", response = TapiTopologyLatencyCharacteristic.class, tags={ "tapi-connectivity", })
@@ -2350,7 +2350,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidLatencyCharacteristictrafficPropertyNameGet(uuid,trafficPropertyName,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.LatencyCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -2368,7 +2368,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidLatencyCharacteristictrafficPropertyNamePost(uuid,trafficPropertyName,tapiTopologyLatencyCharacteristicBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/latency-characteristic={traffic-property-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.topology.LatencyCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -2386,7 +2386,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidLatencyCharacteristictrafficPropertyNamePut(uuid,trafficPropertyName,tapiTopologyLatencyCharacteristicBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/name/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/name/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2403,7 +2403,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidNamePost(uuid,tapiCommonNameAndValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2418,7 +2418,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidNamevalueNameDelete(uuid,valueName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.NameAndValue", response = TapiCommonNameAndValue.class, tags={ "tapi-connectivity", })
@@ -2433,7 +2433,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidNamevalueNameGet(uuid,valueName,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2451,7 +2451,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidNamevalueNamePost(uuid,valueName,tapiCommonNameAndValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/name={value-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/name={value-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.NameAndValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2469,7 +2469,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidNamevalueNamePut(uuid,valueName,tapiCommonNameAndValueBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.connectivitycontext.ConnectivityService", response = Void.class, tags={ "tapi-connectivity", })
@@ -2486,7 +2486,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidPost(uuid,tapiConnectivityConnectivitycontextConnectivityServiceBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.connectivity.connectivitycontext.ConnectivityService", response = Void.class, tags={ "tapi-connectivity", })
@@ -2503,7 +2503,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidPut(uuid,tapiConnectivityConnectivitycontextConnectivityServiceBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2517,7 +2517,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedBurstSizeDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -2531,7 +2531,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedBurstSizeGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2548,7 +2548,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedBurstSizePost(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2565,7 +2565,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedBurstSizePut(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2579,7 +2579,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedInformationRateDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -2593,7 +2593,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedInformationRateGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2610,7 +2610,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedInformationRatePost(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/committed-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2627,7 +2627,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileCommittedInformationRatePut(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.BandwidthProfile", response = Void.class, tags={ "tapi-connectivity", })
@@ -2641,7 +2641,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.BandwidthProfile", response = TapiCommonBandwidthProfile.class, tags={ "tapi-connectivity", })
@@ -2655,7 +2655,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfileGet(uuid,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2669,7 +2669,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakBurstSizeDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -2683,7 +2683,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakBurstSizeGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2700,7 +2700,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakBurstSizePost(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-burst-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2717,7 +2717,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakBurstSizePut(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2731,7 +2731,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakInformationRateDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -2745,7 +2745,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakInformationRateGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2762,7 +2762,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakInformationRatePost(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/peak-information-rate/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2779,7 +2779,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePeakInformationRatePut(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.BandwidthProfile", response = Void.class, tags={ "tapi-connectivity", })
@@ -2796,7 +2796,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePost(uuid,tapiCommonBandwidthProfileBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/bandwidth-profile/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.BandwidthProfile", response = Void.class, tags={ "tapi-connectivity", })
@@ -2813,7 +2813,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityBandwidthProfilePut(uuid,tapiCommonBandwidthProfileBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.Capacity", response = Void.class, tags={ "tapi-connectivity", })
@@ -2827,7 +2827,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.Capacity", response = TapiCommonCapacity.class, tags={ "tapi-connectivity", })
@@ -2841,7 +2841,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.Capacity", response = Void.class, tags={ "tapi-connectivity", })
@@ -2858,7 +2858,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityPost(uuid,tapiCommonCapacityBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.Capacity", response = Void.class, tags={ "tapi-connectivity", })
@@ -2875,7 +2875,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityPut(uuid,tapiCommonCapacityBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2889,7 +2889,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityTotalSizeDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.CapacityValue", response = TapiCommonCapacityValue.class, tags={ "tapi-connectivity", })
@@ -2903,7 +2903,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityTotalSizeGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2920,7 +2920,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityTotalSizePost(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/requested-capacity/total-size/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/requested-capacity/total-size/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.CapacityValue", response = Void.class, tags={ "tapi-connectivity", })
@@ -2937,7 +2937,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRequestedCapacityTotalSizePut(uuid,tapiCommonCapacityValueBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/resilience-type/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/resilience-type/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.topology.ResilienceType", response = Void.class, tags={ "tapi-connectivity", })
@@ -2951,7 +2951,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidResilienceTypeDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/resilience-type/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/resilience-type/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.ResilienceType", response = TapiTopologyResilienceType.class, tags={ "tapi-connectivity", })
@@ -2965,7 +2965,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidResilienceTypeGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/resilience-type/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/resilience-type/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.ResilienceType", response = Void.class, tags={ "tapi-connectivity", })
@@ -2982,7 +2982,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidResilienceTypePost(uuid,tapiTopologyResilienceTypeBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/resilience-type/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/resilience-type/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.topology.ResilienceType", response = Void.class, tags={ "tapi-connectivity", })
@@ -2999,7 +2999,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidResilienceTypePut(uuid,tapiTopologyResilienceTypeBodyParam,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/risk-diversity-characteristic/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/risk-diversity-characteristic/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.RiskCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -3016,7 +3016,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRiskDiversityCharacteristicPost(uuid,tapiTopologyRiskCharacteristicBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.topology.RiskCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -3031,7 +3031,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRiskDiversityCharacteristicriskCharacteristicNameDelete(uuid,riskCharacteristicName,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.topology.RiskCharacteristic", response = TapiTopologyRiskCharacteristic.class, tags={ "tapi-connectivity", })
@@ -3046,7 +3046,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRiskDiversityCharacteristicriskCharacteristicNameGet(uuid,riskCharacteristicName,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.topology.RiskCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -3064,7 +3064,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRiskDiversityCharacteristicriskCharacteristicNamePost(uuid,riskCharacteristicName,tapiTopologyRiskCharacteristicBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/risk-diversity-characteristic={risk-characteristic-name}/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.topology.RiskCharacteristic", response = Void.class, tags={ "tapi-connectivity", })
@@ -3082,7 +3082,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidRiskDiversityCharacteristicriskCharacteristicNamePut(uuid,riskCharacteristicName,tapiTopologyRiskCharacteristicBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/schedule/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/schedule/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.common.TimeRange", response = Void.class, tags={ "tapi-connectivity", })
@@ -3096,7 +3096,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidScheduleDelete(uuid,securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/schedule/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/schedule/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.common.TimeRange", response = TapiCommonTimeRange.class, tags={ "tapi-connectivity", })
@@ -3110,7 +3110,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidScheduleGet(uuid,securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/schedule/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/schedule/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.common.TimeRange", response = Void.class, tags={ "tapi-connectivity", })
@@ -3127,7 +3127,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidSchedulePost(uuid,tapiCommonTimeRangeBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/tapi-connectivity:connectivity-service={uuid}/schedule/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/connectivity-service={uuid}/schedule/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.common.TimeRange", response = Void.class, tags={ "tapi-connectivity", })
@@ -3144,20 +3144,20 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextConnectivityServiceuuidSchedulePut(uuid,tapiCommonTimeRangeBodyParam,securityContext);
     }
     @DELETE
-    @Path("/tapi-common:context/connectivity-context/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "removes tapi.connectivity.ConnectivityContext", response = Void.class, tags={ "tapi-connectivity", })
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 204, message = "Object deleted", response = Void.class),
-        
+
         @io.swagger.annotations.ApiResponse(code = 400, message = "Internal error", response = Void.class) })
     public Response dataContextConnectivityContextDelete(@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.dataContextConnectivityContextDelete(securityContext);
     }
     @GET
-    @Path("/tapi-common:context/connectivity-context/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "returns tapi.connectivity.ConnectivityContext", response = TapiConnectivityConnectivityContext.class, tags={ "tapi-connectivity", })
@@ -3170,7 +3170,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextGet(securityContext);
     }
     @POST
-    @Path("/tapi-common:context/connectivity-context/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates tapi.connectivity.ConnectivityContext", response = Void.class, tags={ "tapi-connectivity", })
@@ -3186,7 +3186,7 @@ public class DataApi  {
         return delegate.dataContextConnectivityContextPost(tapiConnectivityContextConnectivityContextBodyParam,securityContext);
     }
     @PUT
-    @Path("/tapi-common:context/connectivity-context/")
+    @Path("/tapi-common:context/tapi-connectivity:connectivity-context/")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "", notes = "creates or updates tapi.connectivity.ConnectivityContext", response = Void.class, tags={ "tapi-connectivity", })
